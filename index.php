@@ -11,7 +11,7 @@
                 $line1 = 'The start of something great?';
         ?>
       <h2><?php echo $line1; ?></h2>
-      <p>This from github.</p>
+      <p>This is a test from github.</p>
     </div>
   </body>
 </html>
