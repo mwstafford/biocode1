@@ -10,7 +10,7 @@
       <form method="post" action="<?php echo $PHP_SELF?>">
       <p>Email: <input type="Text" size="25" name="email" value="<?php echo $_POST['email']?>"></p>
       <p>First Name: <input type="Text" size="25" name="firstname" value="<?php echo $_POST['firstname']?>"></p>
-      <p>Last Name:<input type="Text" size="25" name="lastname" value="<?php echo $_POST['lastname']?>"></p>
+      <p>Last Name: <input type="Text" size="25" name="lastname" value="<?php echo $_POST['lastname']?>"></p>
       <p>Phone: <input type="Text" size="25" name="phone" value="<?php echo $_POST['phone']?>"></p>
       <p><input type="Submit" name="submitapi" value="SUBMIT"></p>
       </form>
