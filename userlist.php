@@ -8,11 +8,13 @@
       <h1>biocode1 </h1>
 
       <form method="post" action="<?php echo $PHP_SELF?>">
-      <p>Email: <input type="Text" size="25" name="email" value="<?php echo $_POST['email']?>"></p>
-      <p>First Name: <input type="Text" size="25" name="firstname" value="<?php echo $_POST['firstname']?>"></p>
-      <p>Last Name: <input type="Text" size="25" name="lastname" value="<?php echo $_POST['lastname']?>"></p>
-      <p>Phone: <input type="Text" size="25" name="phone" value="<?php echo $_POST['phone']?>"></p>
-      <p><input type="Submit" name="submitapi" value="SUBMIT"></p>
+      <table>
+      <tr><td>Email: </td><td><input type="Text" size="25" name="email" value="<?php echo $_POST['email']?>"></td></tr>
+      <tr><td>First Name: </td><td><input type="Text" size="25" name="firstname" value="<?php echo $_POST['firstname']?>"></td></tr>
+      <tr><td>Last Name: </td><td><input type="Text" size="25" name="lastname" value="<?php echo $_POST['lastname']?>"></td></tr>
+      <tr><td>Phone: </td><td><input type="Text" size="25" name="phone" value="<?php echo $_POST['phone']?>"></td></tr>
+      <tr><td><input type="Submit" name="submitapi" value="SUBMIT"></td><td></td></tr>
+      </table>
       </form>
 
 <?php
@@ -29,11 +31,13 @@ echo '<br><br><br>';
 $decodedText = html_entity_decode($data);
 $myArray = json_decode($decodedText, true);
 $items = $myArray['Items'];
-
+$user_table = '<table><tr><td>Email</td><td>Name</td><td>Phone</td></tr>';
 foreach($items as $item){
-        echo $item['email'].' &nbsp; &nbsp; &nbsp; '.$item['firstname'].' '.$item['lastname'].' '.$item['phone'].'<br>';
+        $user_table .= '<tr><td>'.$item['email'].'</td><td>'.$item['firstname'].' '.$item['lastname'].'</td><td>'.$item['phone'].'</td></tr>';
 }
 
+$user_table .= '</table>';
+echo $user_table;
 echo '<br><br><br>';
 
 ### SUBMIT NEW ENTRY
