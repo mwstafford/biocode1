@@ -38,7 +38,7 @@ foreach($items as $item){
 
 $user_table .= '</table>';
 echo $user_table;
-echo '<br><br><br>';
+echo '<br><br><br><br>';
 
 ### SUBMIT NEW ENTRY
 if($_POST['submitapi'] == 'SUBMIT'){
