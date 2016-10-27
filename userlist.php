@@ -31,7 +31,7 @@ $myArray = json_decode($decodedText, true);
 $items = $myArray['Items'];
 
 foreach($items as $item){
-        echo $item['email'].' '.$item['firstname'].' '.$item['lastname'].' '.$item['phone'].'<br>';
+        echo $item['email'].' &nbsp; &nbsp; &nbsp; '.$item['firstname'].' '.$item['lastname'].' '.$item['phone'].'<br>';
 }
 
 echo '<br><br><br>';
