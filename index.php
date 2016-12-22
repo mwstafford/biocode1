@@ -4,14 +4,10 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <title>biocode1</title>
   </head>
-  <body>
+  <body style="background-color:#000000;">
     <div class="container">
-      <h1>biocode1 </h1>
-        <?php
-                $line1 = 'The start of something great?';
-        ?>
-      <h2><?php echo $line1; ?></h2>
-      <p>This test57 from github.</p>
+     <img src="images/biocode1-logo2.png"> 
+     <p>This test57 from github.</p>
     </div>
   </body>
 </html>
