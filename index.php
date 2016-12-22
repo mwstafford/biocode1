@@ -5,7 +5,7 @@
     <title>biocode1</title>
   </head>
   <body style="background-color:#000000;">
-    <div class="container">
+    <div class="container" style="margin-left:auto; margin-right:auto; margin-top:50px;">
      <img src="images/biocode1-logo2.png"> 
      <p>This test57 from github.</p>
     </div>
